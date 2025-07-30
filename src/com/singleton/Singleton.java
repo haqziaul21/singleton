@@ -29,7 +29,7 @@ public class Singleton implements Cloneable, Serializable {
         return instance;
     }
 
-    protected Object readResolve() {
+    private Object readResolve() {
         return instance;
     }
 }
